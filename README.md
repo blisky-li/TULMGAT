@@ -1,4 +1,10 @@
 # TULMGAT
+Environment：
+Numpy 1.24.2
+PyTorch 1.13.1
+torch-geometric 2.2.0
+
+
 Baselines：
 
 TULER: Identifying Human Mobility via Trajectory Embeddings(https://www.ijcai.org/Proceedings/2017/0234.pdf)(IJCAI2017)
