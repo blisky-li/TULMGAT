@@ -1,5 +1,9 @@
 # TULMGAT
 
+Trajectory-User Linking via Multi-Scale Graph Attention Network
+
+This work has been accepted by the journal "Pattern Recognition"
+
 Environment：
 
 Numpy 1.24.2
