@@ -1,0 +1,7 @@
+# This is not a dataset.
+The suffix “big” indicates that it is the larger version in the TULMGAT dataset.
+Files named with the full name + “_big” are the original data.
+Files named with the full name + “big” are trajectory data, with the first character being the user ID.
+“edges” refers to the edge relationships in the data; refer to the original text for the graph construction method.
+grid_coords is the correspondence between grid IDs and latitude/longitude coordinates, i.e., the index.
+The dat file embeds the grid, with 128 being its embedding size.
