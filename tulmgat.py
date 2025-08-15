@@ -12,7 +12,7 @@ from torch_geometric.loader import DataLoader
 
 from model import GATmodel
 from utils import train, test
-from datasets import DataCenter
+from datasets.data_loader import DataCenter
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
     # load data
 
     dataCenter = DataCenter(None)
-    dataCenter.load_dataSet(embedding_path='gowemb800new128_2.dat', trajectory_path='gowalla800.txt')
+    dataCenter.load_dataSet(embedding_path='datasets/gowembbignew128.dat', trajectory_path='datasets/gowallabig.txt', edge_path='datasets/gowallabigedges.txt')
     trainset = getattr(dataCenter,'_train')
     trainset2 = getattr(dataCenter, '_train2')
     trainset3 = getattr(dataCenter, '_train3')

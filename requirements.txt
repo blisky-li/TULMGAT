@@ -1,3 +1,5 @@
 Numpy==1.24.2
 PyTorch==1.13.1
 torch-geometric==2.2.0
+gensim==4.3.2
+scipy==1.12.0
