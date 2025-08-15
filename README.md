@@ -53,3 +53,33 @@ TULMGAT is compared with several traditional trajectory-user linking methods:
 
 3. **Run TULMGAT**:  `tulmgat.py`
 
+## Notes
+
+1. **Scipy Version Compatibility**  
+   Due to maintenance limitations of `gensim.models.Word2Vec`, only **SciPy ≤ 1.12.0** is supported.
+
+2. **Grid Splitting Granularity**  
+   The granularity should be adjusted according to the dataset.  
+   For **TULMGAT**, the grid size is fixed at **0.01**.
+
+3. **Data Processing & Leakage Prevention**  
+   The data processing pipeline in `data_factory.py` avoids data leakage, e.g.:  
+   - Embeddings are trained only on the training set.  
+   - Edge relationships are built only from the training set.  
+   - New grids in the test set can only index `<\s>` for embedding vectors.
+
+4. **POI Processing**  
+   The processing logic for POIs should be consistent with that of grids.  
+   The graph construction and embedding pipeline can be fully reused.
+
+5. **Datasets**  
+   - **Gowalla:** <https://snap.stanford.edu/data/loc-Gowalla.html>  
+   - **Brightkite:** <https://snap.stanford.edu/data/loc-brightkite.html>  
+   Since early works had limited open-source availability, **TULMGAT** directly uses sequential check-ins extracted from the raw datasets.
+
+6. **Performance Notice**  
+   Running **TULMGAT** directly now will yield better performance than the results reported in the paper.
+
+7. **Contact**  
+   For any issues, please contact: `liyujie23s@ict.ac.cn`
+
