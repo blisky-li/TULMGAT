@@ -1,4 +1,10 @@
-# TULMGAT
+<div align="center">
+  <font size=55>
+    <h1>
+    TULMGAT
+    </h1>
+  </font>
+</div>
 
 **Trajectory-User Linking via Multi-Scale Graph Attention Network**  
 
